@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>테이블 행 색상 채우기</title>
 		<style type="text/css">
 			table {width: 60%; border: gray solid 3px;}	/* 바깥에만 테두리가 지정된다. */
+			
 			table, th, td {border: black 2px solid;
-			/* 테두리선 한줄로 만들기 */
-			border-collapse: collapse;}
+							/* 테두리선 한줄로 만들기 */
+							border-collapse: collapse;}
 			
 			/* 글자 가운데 정렬 */
 			td {text-align: center;}
@@ -20,16 +21,15 @@
 			
 			/* :nth-child => 형제 목록에서 요소 선택
 							odd(홀수), even(짝수) */
-
 			/* tbody 를 사용하면, thead 에는 적용되지 않는다. */
-			tbody tr:nth-child(odd) {
+			tr:nth-child(odd) {
 				background-color: #d6eeee;
-			}
+			} 
 
 			/* tr 만 사용하면, thead 와 tbody 를 따로 본다. */
 			tr:nth-child(even) {
 				background-color: lightyellow;
-			}
+			} 
 			
 			/* 숫자를 사용하면 그 행만 바뀐다. */
 			tr:nth-child(3) {
